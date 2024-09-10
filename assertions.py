@@ -13,7 +13,7 @@ except AssertionError as e:
     raise e
 
 try:
-    avg([1, 2, 3, 'asd'])
+    avg([3, 2, 1, 'asd'])
 except AssertionError as e:
     print(e)
 
