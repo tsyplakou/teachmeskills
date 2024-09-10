@@ -13,7 +13,7 @@ except AssertionError as e:
     raise e
 
 try:
-    avg([1, 2, 3, 'asd'])
+    avg([3, 2, 1, 'asd'])
 except AssertionError as e:
     print(e)
 
@@ -39,7 +39,7 @@ def create_order(
         )
         if client.client_company != destination.client_company:
             raise AssertionError('client must be the same as delivery address client')
-    elif incoterms == 'FCA':
+    elif incoterms == 'XXX':
         assert destination == origin, (
             'FCA incoterms means that delivery address is the same as origin'
         )
