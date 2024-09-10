@@ -39,7 +39,7 @@ def create_order(
         )
         if client.client_company != destination.client_company:
             raise AssertionError('client must be the same as delivery address client')
-    elif incoterms == 'FCA':
+    elif incoterms == 'XXX':
         assert destination == origin, (
             'FCA incoterms means that delivery address is the same as origin'
         )
